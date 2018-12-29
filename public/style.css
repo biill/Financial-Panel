@@ -19,3 +19,47 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+
+#filter {
+  margin: 0.8em;
+}
+
+#stockName {
+  text-decoration-color: black;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.form-group {
+  width: 70%;
+  margin: 0.7em;
+}
+.form-inline .form-control {
+  width: 50%;
+  display: flow-root;
+}
+
+label {
+  margin: 0.4em;
+}
+
+input {
+  margin: 0.4em;
+}
+
+button {
+  margin: 0.3em;
+}
+
+span {
+  margin: 0.5em;
+}
+
+.jumbotron {
+  margin: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+}
