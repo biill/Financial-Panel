@@ -14,7 +14,7 @@ const header = () => (
   <Navbar inverse collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="/">Financial Information Panel</a>
+        <a href="/">Financial Panel</a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
@@ -29,7 +29,7 @@ const header = () => (
         <NavItem eventKey={3} href="/currency">
           Currency
         </NavItem>
-        <NavItem eventKey={4} href="/cryptoCurrency">
+        <NavItem eventKey={4} href="/crypto">
           Crypto Currency
         </NavItem>
       </Nav>

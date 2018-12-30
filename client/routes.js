@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {withRouter, Route, Switch} from 'react-router-dom'
-import {Login, Signup, UserHome, Stock, Currency} from './components'
-import {me} from './store'
-import {gotStock, getWeekly} from './reducer/stockReducer'
+import {Stock, Currency, Crypto, Home} from './components'
 import {Jumbotron} from 'react-bootstrap'
+
 /**
  * COMPONENT
  */
@@ -13,10 +12,10 @@ class Routes extends Component {
     return (
       <Jumbotron>
         <Switch>
+          <Route path="/crypto" component={Crypto} />
           <Route path="/stock" component={Stock} />
           <Route path="/currency" component={Currency} />
-          <Route path="/crypto" />
-          <Route exact path="/" />
+          <Route exact path="/" component={Home} />
         </Switch>
       </Jumbotron>
     )

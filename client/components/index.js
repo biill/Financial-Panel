@@ -6,4 +6,6 @@
 export {default as Navbar} from './navbar'
 export {default as Stock} from './stockChart/stock'
 export {default as Currency} from './currency/routes'
+export {default as Crypto} from './crypto/routes'
+export {default as Home} from './home'
 export {Login, Signup} from './auth-form'

@@ -55,7 +55,7 @@ class CandleStickChartWithCHMousePointer extends React.Component {
       ? {innerTickSize: -1 * gridHeight, tickStrokeOpacity: 0.2}
       : {}
 
-    return (
+    return data.length > 0 ? (
       <ChartCanvas
         height={400}
         ratio={ratio}
@@ -124,7 +124,7 @@ class CandleStickChartWithCHMousePointer extends React.Component {
         </Chart>
         <CrossHairCursor />
       </ChartCanvas>
-    )
+    ) : null
   }
 }
 

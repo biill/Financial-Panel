@@ -1,18 +1,17 @@
 import React from 'react'
 import {Table, Panel, Pager} from 'react-bootstrap'
-import currencyInfor from './currency.json'
+import cryptoInfor from './digital_currency.json'
 
-const currencySymbol = props => {
-  console.log(currencyInfor)
+const cryptoSymbol = props => {
   return (
     <Panel bsStyle="info">
       <Panel.Heading>
-        <Panel.Title componentClass="h3">Currency Symbol Lookup</Panel.Title>
+        <Panel.Title componentClass="h3">Crypto Symbol Lookup</Panel.Title>
       </Panel.Heading>
       <Panel.Body>
         <Pager>
-          <Pager.Item previous href="/currency">
-            &larr; Back to Currency
+          <Pager.Item previous href="/crypto">
+            &larr; Back to Crypto
           </Pager.Item>
           <Pager.Item next href="/">
             Home &rarr;
@@ -21,18 +20,18 @@ const currencySymbol = props => {
         <Table striped bordered condensed hover responsive>
           <thead>
             <tr>
-              <th>Currency code</th>
-              <th>Currency Name</th>
+              <th>Crypto code</th>
+              <th>Crypto Name</th>
             </tr>
           </thead>
           <tbody>
-            {currencyInfor.map(data => {
+            {cryptoInfor.map(data => {
               return (
                 <tr key={data['currency code']}>
                   <td style={{fontWeight: 'bold'}}>{data['currency code']}</td>
                   <td
                     style={{
-                      fontFamily: 'Apple Chancery'
+                      fontFamily: 'Arial, Helvetica, sans-serif'
                     }}
                   >
                     {data['currency name']}
@@ -47,4 +46,4 @@ const currencySymbol = props => {
   )
 }
 
-export default currencySymbol
+export default cryptoSymbol

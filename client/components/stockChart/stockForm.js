@@ -6,25 +6,34 @@ import {
   FormGroup,
   FormControl,
   Form,
-  Button
+  Button,
+  Grid,
+  Row,
+  Glyphicon
 } from 'react-bootstrap'
 
 const stockForm = props => {
   const {handleSubmit} = props
   return (
-    <Form inline onSubmit={handleSubmit}>
-      <FormGroup>
-        <ControlLabel>Please Enter Stock Symbol: </ControlLabel>
-        <FormControl
-          name="stockName"
-          type="text"
-          placeholder="Enter stock name here"
-        />
-        <Button bsStyle="primary" type="submit">
-          Submit
-        </Button>
-      </FormGroup>
-    </Form>
+    <Grid>
+      <Row className="show-grid">
+        <Form inline onSubmit={handleSubmit}>
+          <FormGroup>
+            <ControlLabel>
+              <span>Please Enter Stock Symbol: </span>
+            </ControlLabel>
+            <FormControl
+              name="stockName"
+              type="text"
+              placeholder="Enter stock name here"
+            />
+            <Button bsStyle="primary" type="submit">
+              Submit
+            </Button>
+          </FormGroup>
+        </Form>
+      </Row>
+    </Grid>
   )
 }
 
@@ -33,6 +42,7 @@ const mapDispatch = dispatch => {
     handleSubmit(evt) {
       evt.preventDefault()
       const stockName = evt.target.stockName.value
+      evt.target.stockName.value = ''
       dispatch(gotStockStat(stockName, 'daily'))
     }
   }

@@ -18,7 +18,7 @@ const stockData = {name: '', data: []}
  * ACTION CREATORS
  */
 const getStock = (name, data) => ({type: GET_STOCK, name, data})
-const removeStock = {type: REMOVE_STOCK}
+export const removeStock = {type: REMOVE_STOCK}
 /**
  * THUNK CREATORS
  */
@@ -36,17 +36,6 @@ export const gotStockStat = (stockName, interval) => async dispatch => {
     console.error(err)
   }
 }
-
-// export const getIntraday = (stockName, interval) => async dispatch => {
-//   try {
-//     const res = await axios.get(
-//       `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${stockName}&interval=${interval}&apikey=${APIKEY}`
-//     )
-//     dispatch(getStock(res.data || stockData))
-//   } catch (err) {
-//     console.error(err)
-//   }
-// }
 
 /**
  * REDUCER
