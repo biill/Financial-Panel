@@ -5,10 +5,10 @@ const crypto = props => {
   return (
     <div>
       <PageHeader>
-        Crypto Currency <small>Subtext for header</small>
+        Cryptocurrencies<small>Subtext for header</small>
       </PageHeader>
       <Button bsStyle="primary" href="/crypto/reference">
-        Symbol Reference
+        Cryptocurrencies Symbol Reference
       </Button>
     </div>
   )

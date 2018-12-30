@@ -30,7 +30,7 @@ const header = () => (
           Currency
         </NavItem>
         <NavItem eventKey={4} href="/crypto">
-          Crypto Currency
+          Cryptocurrencies
         </NavItem>
       </Nav>
       <Nav pullRight>
