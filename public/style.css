@@ -98,3 +98,42 @@ span {
   max-width: none;
   font-weight: 700;
 }
+
+#up {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: green;
+}
+#down {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: red;
+}
+
+#infor {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: black;
+}
+
+.dynamic-treemap {
+  text-align: center;
+}
+
+.rv-treemap {
+  margin-left: 8%;
+}
+#information {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.currencyInfo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: purple;
+}
+
+.currencyInfo small {
+  font-size: 0.5em;
+}
