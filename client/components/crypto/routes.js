@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {withRouter, Route, Switch} from 'react-router-dom'
-import Crypto from './crypto'
+import Crypto from './index'
 import Reference from './reference'
 
 /**

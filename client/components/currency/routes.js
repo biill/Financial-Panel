@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {withRouter, Route, Switch} from 'react-router-dom'
-import Currency from './currency'
+import Currency from './index'
 import Reference from './reference'
 
 /**
