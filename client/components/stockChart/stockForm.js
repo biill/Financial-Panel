@@ -6,34 +6,27 @@ import {
   FormGroup,
   FormControl,
   Form,
-  Button,
-  Grid,
-  Row,
-  Glyphicon
+  Button
 } from 'react-bootstrap'
 
 const stockForm = props => {
   const {handleSubmit} = props
   return (
-    <Grid>
-      <Row className="show-grid">
-        <Form inline onSubmit={handleSubmit}>
-          <FormGroup>
-            <ControlLabel>
-              <span>Please Enter Stock Symbol: </span>
-            </ControlLabel>
-            <FormControl
-              name="stockName"
-              type="text"
-              placeholder="Enter stock name here"
-            />
-            <Button bsStyle="primary" type="submit">
-              Submit
-            </Button>
-          </FormGroup>
-        </Form>
-      </Row>
-    </Grid>
+    <Form inline onSubmit={handleSubmit}>
+      <FormGroup>
+        <ControlLabel>
+          <span>Please Enter Stock Symbol: </span>
+        </ControlLabel>
+        <FormControl
+          name="stockName"
+          type="text"
+          placeholder="Enter stock name here"
+        />
+        <Button bsStyle="primary" type="submit">
+          Submit
+        </Button>
+      </FormGroup>
+    </Form>
   )
 }
 
