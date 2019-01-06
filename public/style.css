@@ -137,3 +137,7 @@ span {
 .currencyInfo small {
   font-size: 0.5em;
 }
+
+#filter {
+  margin-left: 1%;
+}
