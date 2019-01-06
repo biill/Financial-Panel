@@ -19,15 +19,15 @@ class currencyPage extends React.Component {
 
   handleSubmit = async evt => {
     evt.preventDefault()
-    // const res = await Axios.get(
-    //   `https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=${
-    //     this.state.currency1
-    //   }&to_currency=${this.state.currency2}&apikey=${APIKEY}`
-    // )
-
     const res = await Axios.get(
-      'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=demo'
+      `https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=${
+        this.state.currency1
+      }&to_currency=${this.state.currency2}&apikey=${APIKEY}`
     )
+
+    // const res = await Axios.get(
+    //   'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=demo'
+    // )
 
     this.setState({infor: res.data})
   }
